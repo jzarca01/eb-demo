@@ -48,12 +48,11 @@ export default class TableView extends Component {
     }
 
     updateRow(updatedRow) {
-        console.log("row", updatedRow);
-        const newData = this.state.data.slice(0, {...updatedRow})
-            .concat([{
-            ...updatedRow
-            }])
-            .concat(this.state.data.slice(updatedRow.id + 1));
+        const newData = this.state.data.slice(0, updatedRow.id-1) //rows id starts with 1, hence the -1
+        .concat([
+            updatedRow
+        ])
+        .concat(this.state.data.slice(updatedRow.id-1 + 1));
 
         this.setState({data: newData});
     }
