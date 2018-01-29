@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "name": "home",
+            "icon": "home",
+            "link": "/"
+        },
+        {
+            "name": "Table",
+            "icon": "tasks",
+            "link": "table"
+        },
+        {
+            "name": "topics",
+            "icon": "idea",
+            "link": "topics"
+        }
+    ]
+}
