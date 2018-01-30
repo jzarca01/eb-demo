@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 import columns from '../../mocks/columns';
 
+import moment from 'moment';
+
 const customStyles = {
   content : {
     top                   : '50%',
@@ -20,6 +22,7 @@ export default class ModalTest extends React.Component {
 
     this.state = {
       modalIsOpen: false,
+      isEdit: false,
       updatedData: {}
     };
 
@@ -28,6 +31,7 @@ export default class ModalTest extends React.Component {
     this.closeModal = this.closeModal.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.update = this.update.bind(this);
+    this.toggleEdit = this.toggleEdit.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -57,12 +61,15 @@ export default class ModalTest extends React.Component {
   }
 
   update() {
-    console.log("update", this.state.updatedData);
     this.props.updateRow(this.state.updatedData);
   }
 
+  toggleEdit() {
+    this.setState({updatedData: this.state.data, isEdit: !this.state.isEdit});
+  }
+
   render() {
-    const { columnsInfo, data, updatedData, updateRow } = this.state;
+    const { columnsInfo, data, updatedData, isEdit, updateRow } = this.state;
     return (
       <div>
         <Modal
@@ -75,11 +82,22 @@ export default class ModalTest extends React.Component {
 
           <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
           <button onClick={this.closeModal}>close</button>
+          <button onClick={this.toggleEdit}>Edit</button> Edit mode: { isEdit }
           <div>I am a modal</div>
           <form>
             {this.state.modalIsOpen && columnsInfo.map((column, index) => {
               if(column.accessor)
-                return <input key={index} name={column.accessor} type={column.type} defaultValue={data[column.accessor]} value={this.state.updatedData[column.accessor]} onChange={this.handleChange} ></input>
+                return (
+                  <div key={index}>
+                    <label>{column.accessor} </label>
+                    <input name={column.accessor} 
+                      type={column.type} 
+                      value={column.type === "date" ? moment(updatedData[column.accessor]).format("YYYY-MM-DD") : updatedData[column.accessor]} 
+                      disabled={!isEdit} 
+                      onChange={this.handleChange} >
+                    </input>
+                  </div>
+                )
               }
             )}
           </form>

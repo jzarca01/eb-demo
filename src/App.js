@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import {
-  BrowserRouter as Router,
-} from 'react-router-dom';
-
 import AppView from './components/app-view';
 
 import menu from './common/menu.json';
@@ -18,8 +14,6 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
-
         <div className="App" style={{height:500, flex:1}}>
           
           <header className="App-header" style={{height:200}}>
@@ -30,8 +24,6 @@ class App extends Component {
           <AppView menu={menu} />
 
         </div>
-
-      </Router>
     );
   }
 }

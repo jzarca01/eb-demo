@@ -9,8 +9,8 @@ import data from '../../mocks/data';
 
 export default class TableView extends Component {
 
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             data: [],
             columns: [],
@@ -48,13 +48,15 @@ export default class TableView extends Component {
     }
 
     updateRow(updatedRow) {
+        const that = this;
         const newData = this.state.data.slice(0, updatedRow.id-1) //rows id starts with 1, hence the -1
-        .concat([
-            updatedRow
-        ])
-        .concat(this.state.data.slice(updatedRow.id-1 + 1));
-
-        this.setState({data: newData});
+            .concat([
+                updatedRow
+            ])
+            .concat(this.state.data.slice(updatedRow.id-1 + 1));
+        return new Promise(function(resolve) {
+            that.setState({data: newData});
+        });
     }
       
     render() {

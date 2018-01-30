@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {
+  BrowserRouter as Router,
   Route
 } from 'react-router-dom';
 
@@ -13,11 +14,11 @@ export default class ContentView extends Component {
 
   render() {
       return (
-        <div>
-            <Route exact path="/" component={Home}/>
-            <Route path="/table" component={TableView}/>
-            <Route path="/topics" component={Topics}/>
-        </div>
+          <div>
+              <Route exact path="/" component={Home}/>
+              <Route path="/table" component={TableView}/>
+              <Route path="/topics" component={Topics}/>
+          </div>
       );
   }
 };
