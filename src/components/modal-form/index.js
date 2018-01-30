@@ -83,7 +83,8 @@ export default class ModalTest extends React.Component {
           <div>I am a modal</div>
           <form>
             {this.state.modalIsOpen && columnsInfo.map((column, index) => {
-              if(column.accessor)
+              if(column.accessor) {
+                return (
                   <div key={index}>
                     <label>{column.accessor} </label>
                     <input name={column.accessor} 
@@ -93,7 +94,12 @@ export default class ModalTest extends React.Component {
                       onChange={this.handleChange} >
                     </input>
                   </div>
+                );
               }
+              else {
+                return false;
+              }
+            }
             )}
           </form>
           <button onClick={this.update}>Update</button>
