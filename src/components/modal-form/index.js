@@ -1,8 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
-import columns from '../../mocks/columns';
-
 import moment from 'moment';
 
 const customStyles = {
@@ -69,7 +66,7 @@ export default class ModalTest extends React.Component {
   }
 
   render() {
-    const { columnsInfo, data, updatedData, isEdit, updateRow } = this.state;
+    const { columnsInfo, updatedData, isEdit } = this.state;
     return (
       <div>
         <Modal
@@ -87,7 +84,6 @@ export default class ModalTest extends React.Component {
           <form>
             {this.state.modalIsOpen && columnsInfo.map((column, index) => {
               if(column.accessor)
-                return (
                   <div key={index}>
                     <label>{column.accessor} </label>
                     <input name={column.accessor} 
@@ -97,7 +93,6 @@ export default class ModalTest extends React.Component {
                       onChange={this.handleChange} >
                     </input>
                   </div>
-                )
               }
             )}
           </form>

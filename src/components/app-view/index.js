@@ -10,10 +10,6 @@ import ContentView from '../content-view';
 
 export default class AppView extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Router>
