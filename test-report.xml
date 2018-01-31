@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite id="0" name="/Users/jeremiezarca/Desktop/Enablon/test-app/src/App.test.js" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/test-app/src/App.test.js" hostname="localhost" tests="1" failures="0" time="2.551" timestamp="2018-01-31T13:47:32">
+  <testsuite id="0" name="/Users/jeremiezarca/Desktop/Enablon/test-app/src/App.test.js" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/test-app/src/App.test.js" hostname="localhost" tests="1" failures="0" time="2.099" timestamp="2018-01-31T14:13:23">
     <properties>
     </properties>
     <testcase classname="renders without crashing" name="renders without crashing" time="0">
@@ -8,7 +8,7 @@
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="1" name="/Users/jeremiezarca/Desktop/Enablon/test-app/src/test/app-view.test.js" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/test-app/src/test/app-view.test.js" hostname="localhost" tests="1" failures="0" time="0.209" timestamp="2018-01-31T13:47:35">
+  <testsuite id="1" name="/Users/jeremiezarca/Desktop/Enablon/test-app/src/test/app-view.test.js" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/test-app/src/test/app-view.test.js" hostname="localhost" tests="1" failures="0" time="0.282" timestamp="2018-01-31T14:13:25">
     <properties>
     </properties>
     <testcase classname="renders without even crashing" name="renders without even crashing" time="0">
@@ -16,7 +16,7 @@
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="2" name="/Users/jeremiezarca/Desktop/Enablon/test-app/src/test/table-view.test.js" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/test-app/src/test/table-view.test.js" hostname="localhost" tests="1" failures="0" time="0.158" timestamp="2018-01-31T13:47:35">
+  <testsuite id="2" name="/Users/jeremiezarca/Desktop/Enablon/test-app/src/test/table-view.test.js" errors="0" package="/Users/jeremiezarca/Desktop/Enablon/test-app/src/test/table-view.test.js" hostname="localhost" tests="1" failures="0" time="0.201" timestamp="2018-01-31T14:13:26">
     <properties>
     </properties>
     <testcase classname="renders without crashing" name="renders without crashing" time="0">
