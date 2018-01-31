@@ -22,3 +22,26 @@ exports[`renders without crashing 1`] = `
   </div>
 </div>
 `;
+
+exports[`renders without even crashing 1`] = `
+<div
+  className="ui segment pushable"
+>
+  <div
+    className="ui inverted vertical labeled icon ui push left thin visible sidebar menu"
+  />
+  <div
+    className="pusher"
+  >
+    <div
+      className="ui basic segment"
+    >
+      <div>
+        <p>
+          HelloNotHome
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
