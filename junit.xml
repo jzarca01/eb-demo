@@ -1,14 +1,2 @@
 <testsuites name="jest tests">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2018-01-31T13:26:44" time="1.64" tests="1">
-    <testcase classname=" renders without even crashing" name=" renders without even crashing" time="0.006">
-    </testcase>
-  </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2018-01-31T13:26:45" time="0.233" tests="1">
-    <testcase classname=" renders without crashing" name=" renders without crashing" time="0.005">
-    </testcase>
-  </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2018-01-31T13:26:46" time="0.169" tests="1">
-    <testcase classname=" renders without crashing" name=" renders without crashing" time="0.024">
-    </testcase>
-  </testsuite>
 </testsuites>

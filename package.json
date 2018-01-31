@@ -100,8 +100,7 @@
       "jsx",
       "node"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/src/test/setupTests.js",
-    "testResultsProcessor": "jest-junit"
+    "setupTestFrameworkScriptFile": "<rootDir>/src/test/setupTests.js"
   },
   "babel": {
     "presets": [
