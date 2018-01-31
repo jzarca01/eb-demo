@@ -6,7 +6,7 @@ import {
     StaticRouter
 } from 'react-router-dom';
 
-it('renders without crashing', () => {
+it('renders without even crashing', () => {
   const component = renderer.create(
     <AppView />
   );
