@@ -18,5 +18,5 @@ export default class ContentView extends Component {
   }
 };
 
-const Home = () => <p>Hello Home</p>;
+const Home = () => <p>HelloNotHome</p>;
 const Topics = () => <p>Hello Topics</p>;
