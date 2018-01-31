@@ -23,9 +23,4 @@ if (!process.env.CI && argv.indexOf('--coverage') < 0) {
   argv.push('--watch');
 }
 
-if(process.env.CI) {
-  argv.push('--ci');
-  argv.push('--testResultsProcessor="../node_modules/jest-junit-reporter"');
-}
-
 jest.run(argv);
