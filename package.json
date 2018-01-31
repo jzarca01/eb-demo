@@ -76,7 +76,8 @@
       "<rootDir>/build/", 
       "<rootDir>/node_modules/",
       "<rootDir>/src/mocks/",
-      "<rootDir>/src/common/"
+      "<rootDir>/src/common/",
+      "<rootDir>/src/test/setupTests.js"
     ],
     "coverageReporters": [
       "html",
