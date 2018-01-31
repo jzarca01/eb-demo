@@ -72,11 +72,15 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
     ],
-    "coveragePathIgnorePatterns" : [
+    "coveragePathIgnorePatterns": [
       "<rootDir>/build/", 
       "<rootDir>/node_modules/",
       "<rootDir>/src/mocks/",
       "<rootDir>/src/common/"
+    ],
+    "coverageReporters": [
+      "html",
+      "cobertura"
     ],
     "coverageThreshold": {
       "global": {
