@@ -24,7 +24,7 @@ if (!process.env.CI && argv.indexOf('--coverage') < 0) {
 }
 
 if(process.env.CI) {
-  argv.push('--testResultsProcessor="jest-junit"');
+  argv.push('--testResultsProcessor="./node_modules/jest-junit"');
 }
 
 jest.run(argv);
