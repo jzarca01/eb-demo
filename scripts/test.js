@@ -25,7 +25,7 @@ if (!process.env.CI && argv.indexOf('--coverage') < 0) {
 
 if(process.env.CI) {
   argv.push('--ci');
-  argv.push('--testResultsProcessor="<rootDir>/node_modules/jest-junit-reporter"');
+  argv.push('--testResultsProcessor="../node_modules/jest-junit-reporter"');
 }
 
 jest.run(argv);
